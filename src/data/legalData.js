@@ -265,12 +265,17 @@ export const articles = {
     ],
     related: ["taratasy-identite", "fampakaram-bady"],
   },
+
+  // Fanambadina
   "fampakaram-bady": {
     title: "Inona ny tokony ho fantatra alohan'ny hanambadiana?",
     category: "fianakaviana",
     level: "pemiera",
     readTime: "6 min",
-    summary: "Ny lalàna momba ny fanambadiana: karazany, antontan-taratasy ilaina, zon'ny mpiambady, ary ny fisaraham-panambadiana.",
+    summary: ["Ny lalàna momba ny fanambadiana: karazany, antontan-taratasy ilaina, zon'ny mpiambady, ary ny fisaraham-panambadiana",
+    ". Voalohany indrindra,tsy maintsy mazava fa tsy azo terena hanao fanambadiana ny olona iray raha tsy sitrapony",
+
+  ],
     sections: [
       {
         title: "Karazana fanambadiana",
@@ -280,25 +285,34 @@ export const articles = {
         title: "Ireo antontan-taratasy ilaina",
         content: "",
         list: [
-          "Extrait de naissance (tsy mihoatra ny 6 volana)",
-          "Certificat de célibat",
-          "Certificat médical",
-          "Fahazoan-davan'ny ray aman-dreny (raha mbola zandry)",
-          "Certificat de coutume (raha ilaina)",
+          "Taratasy fahaterahana (navoaka tao anatin'ny enim-bolana farany)",
+          "Taratasy manamarina ny maha-tokan-tena",
+          "Taratasy ara-pahasalamana",
+          "Taratasy faneken'ny ray aman-dreny (raha ilaina)",
+          "Taratasy manamarina ny fomban-drazana (raha ilaina)",
         ],
       },
       {
-        title: "Zon'ny mpiambady",
-        content: "Ny fanambadiana dia manome zo: fizarana fananana, fandovana, fitaizana ankizy, ary fiahiana ara-pahasalamana. Ny mpiambady tsirairay dia manana zo mitovy.",
+        title: "Zon'ny mpivady",
+        content: "Manome zo sasany ny fanambadiana: fizarana fananana, lova, fikarakarana ny zanaka ary fiantohana ara-pahasalamana. Samy manana ireo zo ireo ny mpivady.",
+      },
+      {
+        title : "Ny tokony atao raha te hisara-panambadiana",
+        list: [
+          "Tsy maintsy lazaina amin'ny fanjakana ny fisarahina na avy amin'ny Lahy na avy amin'ny Vavy.",
+         
+        ],
       },
       {
         title: "Zava-dehibe",
-        content: "Ny fanambadiana sivily dia tsy maintsy atao alohan'ny fanambadiana ara-pivavahana. Raha tsy izany, dia tsy manana lanjany ara-dalàna ny fanambadiana.",
+        content: "Ny fanambadiana sivily dia tsy maintsy atao alohan'ny fanambadiana ara-pivavahana. Raha tsy izany, tsy manan-kery ara-dalàna ny fanambadiana.",
         type: "warning",
       },
     ],
     related: ["fisaraham-panambadiana", "fandovana"],
   },
+
+// fisarahana
   "fisaraham-panambadiana": {
     title: "Ahoana ny fomba misaraham-panambadiana?",
     category: "fianakaviana",
