@@ -431,6 +431,168 @@ export const articles = {
     ],
     related: ["fisoratana-anarana-teraka", "andraikitra"],
   },
+  "fanekena-tany": {
+    title: "Ahoana ny fomba mananana tany ara-dalàna?",
+    category: "tany-trano",
+    level: "antsalotra",
+    readTime: "7 min",
+    summary: "Ny lalàna momba ny tany: fividianana, fisoratana anarana, ary ny fomba iadiana amin'ny olana momba ny tany.",
+    sections: [
+      {
+        title: "Fomba fahazoana tany",
+        content: "Misy fomba maro ahazoana tany eto Madagasikara: ny fividianana, ny lova, ny fanomezana, na ny fanaovana 'titre' ny tany efa nampiasaina hatry ny ela.",
+      },
+      {
+        title: "Ireo antontan-taratasy ilaina",
+        content: "",
+        list: [
+          "Certificat juridique avy amin'ny Domaine",
+          "Acte de vente vita sonia sy voamarina",
+          "Kopia ny titre foncier na certificat foncier",
+          "Karapanondron'ny mpividy sy ny mpivarotra",
+        ],
+      },
+      {
+        title: "Zava-dehibe",
+        content: "Hamarino foana any amin'ny biraon'ny Domaine raha tena an'ilay mpivarotra tokoa ny tany alohan'ny handoavana vola. Tandremo ny 'double vente'.",
+        type: "warning",
+      },
+    ],
+    related: ["fandovana", "andraikitra"],
+  },
+  "roaka-asa": {
+    title: "Raha roaky ny asa aho, inona no zon'ko?",
+    category: "asa-mpiasa",
+    level: "antsalotra",
+    readTime: "6 min",
+    summary: "Ny zon'ny mpiasa raha voaroaka: indemnité, préavis, ary ny fomba miaro tena manoloana ny fandroahana tsy ara-drariny.",
+    sections: [
+      {
+        title: "Karazana fandroahana",
+        content: "Misy ny fandroahana noho ny fahadisoana (faute), ny fandroahana noho ny antony ara-toekarena, ary ny fandroahana tsy ara-drariny (licenciement abusif).",
+      },
+      {
+        title: "Ireo onitra azonao tadiavina",
+        content: "",
+        list: [
+          "Indemnité de licenciement (raha niasa mihoatra ny 2 taona)",
+          "Indemnité de préavis (raha tsy nampitandremana mialoha)",
+          "Indemnité de congés payés (ny andro tsy nialana sasatra)",
+          "Certificat de travail",
+        ],
+      },
+      {
+        title: "Inona no atao?",
+        content: "Manatona ny Inspection du Travail raha heverinao fa tsy ara-dalàna ny fandroahana anao. Izy ireo no mpanelanelana voalohany.",
+      },
+    ],
+    related: ["kontrata-asa", "olana-asa"],
+  },
+  "heloka-be-aty": {
+    title: "Inona ny tsy fitoviana amin'ny heloka?",
+    category: "heloka-fitoriana",
+    level: "antsalotra",
+    readTime: "7 min",
+    summary: "Contravention, délit, crime: ny sokajy heloka tsirairay ary ny sazy mifandraika aminy araka ny Code Pénal.",
+    sections: [
+      {
+        title: "Ny Contravention",
+        content: "Heloka maivana toy ny fandikana ny lalàn'ny fifamoivoizana na tabataba amin'ny alina. Sazy amande na figadrana fohy no miandry amin'izany.",
+      },
+      {
+        title: "Ny Délit",
+        content: "Heloka antonony toy ny halatra tsotra, herisetra maivana, na fisolokiana. Ny Fitsarana Ambaratonga Voalohany no mitsara azy.",
+      },
+      {
+        title: "Ny Crime",
+        content: "Heloka bevava toy ny vono olona, fanolanana, na halatra mitam-piadiana. Ny Fitsarana Ady Heloka Be (Cour Criminelle) no mandray izany.",
+      },
+    ],
+    related: ["fitoriana-polisy", "fitoriana"],
+  },
+  "trosa": {
+    title: "Misy namana manana trosa amiko",
+    category: "vola-varotra",
+    level: "pemiera",
+    readTime: "5 min",
+    summary: "Ny lalàna momba ny trosa: fomba famerenana, ny dikan'ny reconnaissance de dette, ary ny dingana ara-pitsarana.",
+    sections: [
+      {
+        title: "Ny maha-zava-dehibe ny taratasy",
+        content: "Ny trosa mihoatra ny vola voatondron'ny lalàna dia tokony hanana 'Reconnaissance de dette' an-tsoratra sy misy sonia ho porofo.",
+      },
+      {
+        title: "Dingana famerenam-bola",
+        content: "",
+        numberedSteps: [
+          "Fandefasana 'Mise en demeure' (taratasy fampitandremana)",
+          "Fifampiresahana am-pilaminana (médiation)",
+          "Fitoriana amin'ny fitsarana sivily (Injonction de payer)",
+        ],
+      },
+      {
+        title: "Torohevitra",
+        content: "Aza adino ny manisy daty sy ny fe-potoana famerenana ny vola ao anatin'ny taratasy ifanekena.",
+        type: "example",
+      },
+    ],
+    related: ["varotra-antsinjarany"],
+  },
+  "varotra-antsinjarany": {
+    title: "Ahoana ny fomba manomboka varotra ara-dalàna?",
+    category: "vola-varotra",
+    level: "antsalotra",
+    readTime: "8 min",
+    summary: "RCS, STAT, NIF: ny dingana rehetra hanombohana varotra ara-dalàna eto Madagasikara.",
+    sections: [
+      {
+        title: "Ny karazana orinasa",
+        content: "Afaka mifidy ny ho 'Entreprise Individuelle' ianao (amin'ny anaranao manokana) na 'Société' (tahaka ny SARL, izay manana ny maha-izy azy manokana).",
+      },
+      {
+        title: "Dingana arahina",
+        content: "",
+        list: [
+          "Fisoratana anarana amin'ny Registre du Commerce (RCS)",
+          "Fakana ny karatra Statistique (STAT)",
+          "Fakana ny Numero d'Identification Fiscale (NIF)",
+          "Fahazoana 'Carte Professionnelle' raha ilaina",
+        ],
+      },
+      {
+        title: "Tombony",
+        content: "Ny varotra ara-dalàna dia ahafahanao mahazo fampindramam-bola any amin'ny banky sy miaro anao amin'ny fanasaziana mandritra ny fanaraha-maso.",
+      },
+    ],
+    related: ["trosa", "kontrata-asa"],
+  },
+  "fandovana": {
+    title: "Ahoana ny fomba mandova ara-dalàna?",
+    category: "fianakaviana",
+    level: "antsalotra",
+    readTime: "9 min",
+    summary: "Ny lalàna momba ny fandovana: ny mpandova, ny testamenta, ary ny fizarana fananana.",
+    sections: [
+      {
+        title: "Iza no mandova?",
+        content: "Ny lalàna dia mametraka filaharam-be (ordre successoral): ny ankizy no voalohany, arahin'ny vady, avy eo ny ray aman-dreny sy ny mpiray tam-po raha tsy misy ankizy.",
+      },
+      {
+        title: "Ny dikan'ny 'Acte de Notoriété'",
+        content: "Taratasy avoakan'ny fitsarana na ny notera io mba hanamarinana ny maha-mpandova ny olona iray aorian'ny fahafatesan'ny tompon'ny fananana.",
+      },
+      {
+        title: "Ny Testamenta",
+        content: "Afaka manao testamenta ny olona iray mba handahatra ny fananany, saingy misy ampahany amin'ny fananana tsy maintsy omena ny mpandova mivantana (réserve héréditaire).",
+      },
+      {
+        title: "Zava-dehibe",
+        content: "Mila efaina ny 'droits de mutation' na ny hetra amin'ny fandovana rehefa mamindra ny anaran'ny fananana amin'ny mpandova.",
+        type: "warning",
+      },
+    ],
+    related: ["fampakaram-bady", "fisaraham-panambadiana", "fanekena-tany"],
+  },
 }
 
 categories.forEach((cat) => {
