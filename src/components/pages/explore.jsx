@@ -13,6 +13,7 @@ function Explore() {
   const [query, setQuery] = useState("")
   const [categoryFilter, setCategoryFilter] = useState("all")
   const [sortBy, setSortBy] = useState("popular")
+  const [lang, setLang] = useState("mg") // 'mg' na 'fr'
 
   const pathParam = searchParams.get("path")
 
@@ -36,7 +37,9 @@ function Explore() {
       result = result.filter(
         (t) =>
           t.title.toLowerCase().includes(lowerQuery) ||
-          t.description.toLowerCase().includes(lowerQuery)
+          t.description.toLowerCase().includes(lowerQuery) ||
+          (t.titleFr && t.titleFr.toLowerCase().includes(lowerQuery)) ||
+          (t.descriptionFr && t.descriptionFr.toLowerCase().includes(lowerQuery))
       )
     }
 
@@ -56,15 +59,28 @@ function Explore() {
   return (
     <>
       <Header />
-      <main id="main-explore" className="min-h-screen bg-gradient-to-t from-olive-100 via-stone-50 to-white text-slate-900 font-lato">
+      <main id="main-explore" className="min-h-screen bg-stone-50 text-slate-900 font-lato">
         <div className="max-w-6xl mx-auto px-5 py-10 md:py-16">
-          <div className="mb-8">
-            <h1 className="font-playfair text-3xl sm:text-4xl font-extrabold text-slate-900 mb-2">
-              {pathParam ? guidedPaths.find((p) => p.id === pathParam)?.title || "Zahao":"Zahao ireo lalàna rehetra"}
-            </h1>
-            <p className="text-slate-600 text-lg">
-              {pathParam ? guidedPaths.find((p) => p.id === pathParam)?.description : "Mikaroha, mianara, ary fantaro ny zohanao"}
-            </p>
+          <div className="flex flex-col md:flex-row md:items-end justify-between mb-8 gap-4">
+            <div>
+              <h1 className="font-playfair text-3xl sm:text-4xl font-extrabold text-slate-900 mb-2">
+                {lang === 'fr' ? "Explorer les lois" : "Zahao ireo lalàna rehetra"}
+              </h1>
+              <p className="text-slate-600 text-lg">
+                {lang === 'fr' ? "Recherchez, apprenez et connaissez vos droits" : "Mikaroha, mianara, ary fantaro ny zonao"}
+              </p>
+            </div>
+            
+            <div className="flex bg-white rounded-lg p-1 shadow-sm border border-slate-200 self-start">
+              <button 
+                onClick={() => setLang('mg')}
+                className={`px-4 py-1.5 rounded-md text-sm font-medium transition-colors ${lang === 'mg' ? 'bg-amber-500 text-white' : 'text-slate-600 hover:bg-slate-50'}`}
+              >MG</button>
+              <button 
+                onClick={() => setLang('fr')}
+                className={`px-4 py-1.5 rounded-md text-sm font-medium transition-colors ${lang === 'fr' ? 'bg-amber-500 text-white' : 'text-slate-600 hover:bg-slate-50'}`}
+              >FR</button>
+            </div>
           </div>
 
           <SearchBar

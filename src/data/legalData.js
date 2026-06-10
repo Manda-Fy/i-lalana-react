@@ -2,7 +2,9 @@ export const categories = [
   {
     id: "fianakaviana",
     name: "Fianakaviana",
-    description: "Mariage, divorce, héritage, garde d'enfants",
+    nameFr: "Famille",
+    description: "Fanambadiana, fisarahana, lova, fitaizana zaza",
+    descriptionFr: "Mariage, divorce, héritage, garde d'enfants",
     icon: "👨‍👩‍👧‍👦",
     color: "bg-rose-100 text-rose-800 border-rose-200",
     hoverColor: "hover:bg-rose-200",
@@ -11,7 +13,9 @@ export const categories = [
   {
     id: "tany-trano",
     name: "Tany sy trano",
-    description: "Terrain, construction, conflit voisinage",
+    nameFr: "Terrain et Logement",
+    description: "Tany, fanorenana, olana amin'ny mpiara-belona",
+    descriptionFr: "Terrain, construction, conflit de voisinage",
     icon: "🏡",
     color: "bg-green-100 text-green-800 border-green-200",
     hoverColor: "hover:bg-green-200",
@@ -20,7 +24,9 @@ export const categories = [
   {
     id: "asa-mpiasa",
     name: "Asa sy mpiasa",
-    description: "Contrat, licenciement, droits du travailleur",
+    nameFr: "Travail et Employés",
+    description: "Kontrata, fandroahana, zon'ny mpiasa",
+    descriptionFr: "Contrat, licenciement, droits du travailleur",
     icon: "💼",
     color: "bg-blue-100 text-blue-800 border-blue-200",
     hoverColor: "hover:bg-blue-200",
@@ -29,7 +35,9 @@ export const categories = [
   {
     id: "heloka-fitoriana",
     name: "Heloka sy fitoriana",
-    description: "Porter plainte, vol, agression",
+    nameFr: "Infractions et Plaintes",
+    description: "Fitoriana, halatra, herisetra",
+    descriptionFr: "Porter plainte, vol, agression",
     icon: "⚖️",
     color: "bg-orange-100 text-orange-800 border-orange-200",
     hoverColor: "hover:bg-orange-200",
@@ -38,7 +46,9 @@ export const categories = [
   {
     id: "vola-varotra",
     name: "Vola sy varotra",
-    description: "Dette, contrat, commerce",
+    nameFr: "Finances et Commerce",
+    description: "Trosa, kontrata, varotra",
+    descriptionFr: "Dette, contrat, commerce",
     icon: "💰",
     color: "bg-yellow-100 text-yellow-800 border-yellow-200",
     hoverColor: "hover:bg-yellow-200",
@@ -47,7 +57,9 @@ export const categories = [
   {
     id: "andraikitra",
     name: "Fandraisana andraikitra",
-    description: "Démarches, papiers, droits civiques",
+    nameFr: "Citoyenneté",
+    description: "Dingana ara-taratasy, zon'ny olom-pirenena",
+    descriptionFr: "Démarches, papiers, droits civiques",
     icon: "📋",
     color: "bg-purple-100 text-purple-800 border-purple-200",
     hoverColor: "hover:bg-purple-200",
@@ -59,40 +71,46 @@ export const guidedPaths = [
   {
     id: "fitoriana",
     title: "Te-hiampanga aho",
+    titleFr: "Je veux porter plainte",
     description: "Torolalana feno momba ny fomba fitoriana",
+    descriptionFr: "Guide complet sur la procédure de plainte",
     icon: "📢",
     steps: [
-      { title: "Fantaro ny heloka", description: "Azony tsara ny zavatra nitranga sy ny lalàna mifandraika amin'izany" },
-      { title: "Mangataka torohevitra", description: "Mijery mpisolovava na mpampanoa lalàna" },
-      { title: "Manomana antontan-taratasy", description: "Ny porofo rehetra ilaina" },
-      { title: "Mandefa ny fitoriana", description: "Manatona ny birao mpampanoa lalàna" },
-      { title: "Manaraka ny fizotry ny raharaha", description: "Fanaraha-maso ny dingana manaraka" },
+      { title: "Fantaro ny heloka", titleFr: "Identifier l'infraction", description: "Azony tsara ny zavatra nitranga sy ny lalàna mifandraika amin'izany", descriptionFr: "Comprendre ce qui s'est passé et les lois concernées" },
+      { title: "Mangataka torohevitra", titleFr: "Demander conseil", description: "Mijery mpisolovava na mpampanoa lalàna", descriptionFr: "Consulter un avocat ou un conseiller juridique" },
+      { title: "Manomana antontan-taratasy", titleFr: "Préparer les documents", description: "Ny porofo rehetra ilaina", descriptionFr: "Rassembler toutes les preuves nécessaires" },
+      { title: "Mandefa ny fitoriana", titleFr: "Déposer la plainte", description: "Manatona ny birao mpampanoa lalàna", descriptionFr: "Se rendre au bureau du procureur ou au commissariat" },
+      { title: "Manaraka ny fizotry ny raharaha", titleFr: "Suivi du dossier", description: "Fanaraha-maso ny dingana manaraka", descriptionFr: "Suivre l'évolution de la procédure" },
     ],
   },
   {
     id: "fisaraham-panambadiana",
     title: "Misaraka aho, inona no atao?",
+    titleFr: "Je divorce, que faire ?",
     description: "Dingana rehetra hanombohana ny fisaraham-panambadiana",
+    descriptionFr: "Toutes les étapes pour entamer un divorce",
     icon: "💔",
     steps: [
-      { title: "Resy lahatra amin'ny fanapahan-kevitra", description: "Diniho tsara ny vokatry ny fisarahana" },
-      { title: "Mijery mpisolovava", description: "Mila mpisolovava ianao raha misy ankizy na fananana" },
-      { title: "Manomana ny antontan-taratasy", description: "Taratasin'ny fanambadiana, taratasy momba ny ankizy, sns" },
-      { title: "Manatrika ny fitsarana", description: "Ny fitsarana no manapa-kevitra farany" },
+      { title: "Resy lahatra amin'ny fanapahan-kevitra", titleFr: "Être convaincu de sa décision", description: "Diniho tsara ny vokatry ny fisarahana", descriptionFr: "Bien réfléchir aux conséquences de la séparation" },
+      { title: "Mijery mpisolovava", titleFr: "Consulter un avocat", description: "Mila mpisolovava ianao raha misy ankizy na fananana", descriptionFr: "Un avocat est nécessaire s'il y a des enfants ou des biens" },
+      { title: "Manomana ny antontan-taratasy", titleFr: "Préparer les documents", description: "Taratasin'ny fanambadiana, taratasy momba ny ankizy, sns", descriptionFr: "Acte de mariage, documents relatifs aux enfants, etc." },
+      { title: "Manatrika ny fitsarana", titleFr: "Assister à l'audience", description: "Ny fitsarana no manapa-kevitra farany", descriptionFr: "Le tribunal prend la décision finale" },
     ],
   },
   {
     id: "olana-asa",
     title: "Manana olana amin'ny asa aho",
+    titleFr: "J'ai un problème au travail",
     description: "Torolalana ho an'ny mpiasa manana olana amin'ny asa",
+    descriptionFr: "Guide pour les employés rencontrant des difficultés",
     icon: "🔧",
     steps: [
-      { title: "Fantaro ny zonao", description: "Ny lalàna momba ny asa dia miaro anao" },
-      { title: "Tehirizo ny porofo", description: "Contrat, fiche de paie, mail, sns" },
-      { title: "Miresaha amin'ny lehibenao", description: "Andramo ny resaka tsotra aloha" },
-      { title: "Mangataka mediateur", description: "Raha tsy mety ny resaka, misy mpampandamina" },
-      { title: "Mangataka torohevitra ara-dalàna", description: "Mijery mpisolovava manam-pahaizana momba ny asa" },
-      { title: "Manatrika ny tribunal du travail", description: "Ny fitsarana momba ny asa no manapaka" },
+      { title: "Fantaro ny zonao", titleFr: "Connaître vos droits", description: "Ny lalàna momba ny asa dia miaro anao", descriptionFr: "Le code du travail vous protège" },
+      { title: "Tehirizo ny porofo", titleFr: "Garder les preuves", description: "Contrat, fiche de paie, mail, sns", descriptionFr: "Contrat, fiches de paie, emails, etc." },
+      { title: "Miresaha amin'ny lehibenao", titleFr: "Parler à votre supérieur", description: "Andramo ny resaka tsotra aloha", descriptionFr: "Essayer d'abord une discussion informelle" },
+      { title: "Mangataka mediateur", titleFr: "Demander un médiateur", description: "Raha tsy mety ny resaka, misy mpampandamina", descriptionFr: "Si la discussion échoue, faire appel à un médiateur" },
+      { title: "Mangataka torohevitra ara-dalàna", titleFr: "Conseil juridique", description: "Mijery mpisolovava manam-pahaizana momba ny asa", descriptionFr: "Consulter un avocat spécialisé en droit du travail" },
+      { title: "Manatrika ny tribunal du travail", titleFr: "Tribunal du travail", description: "Ny fitsarana momba ny asa no manapaka", descriptionFr: "Le tribunal du travail rend son verdict" },
     ],
   },
   {
@@ -113,7 +131,9 @@ export const topics = [
   {
     id: "fisoratana-anarana-teraka",
     title: "Fisoratana anarana ny zaza vao teraka",
+    titleFr: "Enregistrement de naissance",
     description: "Dingana rehetra hanoratana ny zaza vao teraka amin'ny registry civil. Fotoana ilaina, antontan-taratasy, ary toerana tokony aleha.",
+    descriptionFr: "Procédure d'enregistrement d'un nouveau-né à l'état civil. Délais, documents requis et lieux.",
     category: "andraikitra",
     level: "pemiera",
     readTime: "4 min",
@@ -122,7 +142,9 @@ export const topics = [
   {
     id: "fampakaram-bady",
     title: "Inona ny tokony ho fantatra alohan'ny hanambadiana?",
+    titleFr: "Tout savoir sur le mariage",
     description: "Ny lalàna momba ny fanambadiana: karazany, antontan-taratasy ilaina, zon'ny mpiambady, ary ny fisaraham-panambadiana.",
+    descriptionFr: "Le droit du mariage : types, documents nécessaires, droits des conjoints et divorce.",
     category: "fianakaviana",
     level: "pemiera",
     readTime: "6 min",
@@ -131,7 +153,9 @@ export const topics = [
   {
     id: "fisaraham-panambadiana",
     title: "Ahoana ny fomba misaraham-panambadiana?",
+    titleFr: "Comment divorcer ?",
     description: "Torolalana feno momba ny fisaraham-panambadiana: antony, dingana, fizarana fananana, ary fitaizana ankizy.",
+    descriptionFr: "Guide complet sur le divorce : motifs, procédures, partage des biens et garde des enfants.",
     category: "fianakaviana",
     level: "antsalotra",
     readTime: "8 min",
@@ -140,7 +164,9 @@ export const topics = [
   {
     id: "fanekena-tany",
     title: "Ahoana ny fomba mananana tany ara-dalàna?",
+    titleFr: "Droit foncier et acquisition",
     description: "Ny lalàna momba ny tany: fividianana, fisoratana anarana, tatitra, ary fomba iadiana amin'ny olana momba ny tany.",
+    descriptionFr: "Lois foncières : achat, immatriculation et résolution des litiges fonciers.",
     category: "tany-trano",
     level: "antsalotra",
     readTime: "7 min",
@@ -149,7 +175,9 @@ export const topics = [
   {
     id: "kontrata-asa",
     title: "Inona ny karazan-kontrata asa?",
+    titleFr: "Les types de contrats de travail",
     description: "CDI, CDD, stage, essai: ny karazan-kontratra rehetra, ny zon'ny mpiasa, ary ny fomba fandresena olana amin'ny asa.",
+    descriptionFr: "CDI, CDD, stage, essai : types de contrats, droits des employés et résolution de conflits.",
     category: "asa-mpiasa",
     level: "pemiera",
     readTime: "5 min",
@@ -158,7 +186,9 @@ export const topics = [
   {
     id: "roaka-asa",
     title: "Raha roaky ny asa aho, inona no zon'ko?",
+    titleFr: "Quels sont mes droits en cas de licenciement ?",
     description: "Ny zon'ny mpiasa raha voaroaka: indemnité, préavis, chômage, ary ny fomba miaro tena.",
+    descriptionFr: "Droits du salarié licencié : indemnités, préavis et recours légaux.",
     category: "asa-mpiasa",
     level: "antsalotra",
     readTime: "6 min",
@@ -167,7 +197,9 @@ export const topics = [
   {
     id: "fitoriana-polisy",
     title: "Ahoana ny fomba manatona ny polisy?",
+    titleFr: "Comment porter plainte à la police ?",
     description: "Ny dingana rehetra handehanana any amin'ny polisy na gendarmerie hitoriana. Inona no entina, inona no lazaina.",
+    descriptionFr: "Étapes pour porter plainte auprès de la police ou de la gendarmerie.",
     category: "heloka-fitoriana",
     level: "pemiera",
     readTime: "4 min",
@@ -176,7 +208,9 @@ export const topics = [
   {
     id: "heloka-be-aty",
     title: "Inona ny tsy fitoviana amin'ny heloka?",
+    titleFr: "Classification des infractions",
     description: "Fandikan-teny, contravention, délit, crime: ny sokajy heloka tsirairay ary ny sazy mifandraika aminy.",
+    descriptionFr: "Contravention, délit, crime : catégories d'infractions et sanctions selon le Code Pénal.",
     category: "heloka-fitoriana",
     level: "antsalotra",
     readTime: "7 min",
@@ -185,7 +219,9 @@ export const topics = [
   {
     id: "trosa",
     title: "Misy namana manana trosa amiko",
+    titleFr: "Gestion des dettes et créances",
     description: "Ny lalàna momba ny trosa: fomba famerenana, fitoriana, ary ny zon'ny mpampindram-bola sy ny mpandray.",
+    descriptionFr: "Loi sur les dettes : recouvrement, recours et droits des parties.",
     category: "vola-varotra",
     level: "pemiera",
     readTime: "5 min",
@@ -194,7 +230,9 @@ export const topics = [
   {
     id: "varotra-antsinjarany",
     title: "Ahoana ny fomba manomboka varotra ara-dalàna?",
+    titleFr: "Comment créer un commerce légal ?",
     description: "Fisoratana anarana, carte statistique, NIF, statuts: ny dingana rehetra hanombohana varotra ara-dalàna.",
+    descriptionFr: "Registre du Commerce, STAT, NIF : étapes pour formaliser une activité commerciale.",
     category: "vola-varotra",
     level: "antsalotra",
     readTime: "8 min",
@@ -203,7 +241,9 @@ export const topics = [
   {
     id: "taratasy-identite",
     title: "Ahoana ny fomba mangataka carte d'identité?",
+    titleFr: "Demande de carte d'identité",
     description: "Antontan-taratasy ilaina, toerana aleha, fotoana ilaina, ary vidiny. Torolalana feno ho an'ny CNI.",
+    descriptionFr: "Documents requis, lieux et délais pour l'obtention de la CIN.",
     category: "andraikitra",
     level: "pemiera",
     readTime: "3 min",
@@ -212,7 +252,9 @@ export const topics = [
   {
     id: "fandovana",
     title: "Ahoana ny fomba mandova ara-dalàna?",
+    titleFr: "Droit des successions",
     description: "Ny lalàna momba ny fandovana: mpandova, fizarana fananana, testament, ary ny fomba fisoratana.",
+    descriptionFr: "Lois sur l'héritage : héritiers, partage des biens et testaments.",
     category: "fianakaviana",
     level: "antsalotra",
     readTime: "9 min",
@@ -223,17 +265,22 @@ export const topics = [
 export const articles = {
   "fisoratana-anarana-teraka": {
     title: "Fisoratana anarana ny zaza vao teraka",
+    titleFr: "Enregistrement de naissance",
     category: "andraikitra",
     level: "pemiera",
     readTime: "4 min",
     summary: "Torolalana feno momba ny fomba fisoratana anarana ny zaza vao teraka. Ny dingana rehetra, ny antontan-taratasy ilaina, ary ny fotoana tokony hanaovana izany.",
+    summaryFr: "Guide complet sur l'enregistrement des nouveau-nés : étapes, documents et délais.",
     sections: [
       {
         title: "Nahoana no ilaina ny fisoratana anarana?",
+        titleFr: "Pourquoi est-ce nécessaire ?",
         content: "Ny fisoratana anarana dia manome mombamomba ara-dalàna ho an'ny zaza. Tanpa izany, ny zaza dia tsy manana zo amin'ny fanabeazana, fahasalamana, ary ny zon'olombelona hafa. Io no porofo voalohany momba ny maha-olona azy.",
+        contentFr: "L'enregistrement donne une identité légale à l'enfant. Sans cela, il n'a pas accès à l'éducation ou à la santé.",
       },
       {
         title: "Ireo antontan-taratasy ilaina",
+        titleFr: "Documents nécessaires",
         content: "",
         list: [
           "Déclaration de naissance avy amin'ny hopitaly na ny mpampivelona",
@@ -241,9 +288,16 @@ export const articles = {
           "Taratasin'ny fanambadiana (raha misy)",
           "Fahazoana alalana avy amin'ny ray (raha tsy manambady)",
         ],
+        listFr: [
+          "Déclaration de naissance de l'hôpital ou de la sage-femme",
+          "Carte d'identité ou passeport des parents",
+          "Acte de mariage (si applicable)",
+          "Reconnaissance paternelle (pour les couples non mariés)",
+        ],
       },
       {
         title: "Dingana arahina",
+        titleFr: "Étapes à suivre",
         content: "",
         numberedSteps: [
           "Manatona ny bureau d'état civil amin'ny commune misy anao",
@@ -251,15 +305,25 @@ export const articles = {
           "Manoratra ny taratasy fisoratana anarana",
           "Mandray ny extrait de naissance",
         ],
+        numberedStepsFr: [
+          "Se rendre au bureau d'état civil de votre commune",
+          "Présenter tous les documents",
+          "Remplir le registre d'enregistrement",
+          "Récupérer l'extrait de naissance",
+        ],
       },
       {
         title: "Zava-dehibe",
+        titleFr: "Important",
         content: "Ny fisoratana anarana dia tokony hatao ao anatin'ny 30 andro aorian'ny fahaterahana. Raha mihoatra, mila didin'ny fitsarana ianao.",
+        contentFr: "L'enregistrement doit être fait dans les 30 jours suivant la naissance. Au-delà, un jugement est nécessaire.",
         type: "warning",
       },
       {
         title: "Ohatra",
+        titleFr: "Exemple",
         content: "Raha teraka tany an-trano ny zaza, dia mila porofo avy amin'ny fokonolona na ny mpampivelona ianao. Raha tany amin'ny hopitaly, dia ny hopitaly no manome ny taratasy.",
+        contentFr: "Si l'enfant est né à domicile, une preuve du fokonolona ou de la sage-femme est requise. Si à l'hôpital, l'établissement fournit le certificat.",
         type: "example",
       },
     ],
@@ -444,6 +508,168 @@ export const articles = {
       },
     ],
     related: ["fisoratana-anarana-teraka", "andraikitra"],
+  },
+  "fanekena-tany": {
+    title: "Ahoana ny fomba mananana tany ara-dalàna?",
+    category: "tany-trano",
+    level: "antsalotra",
+    readTime: "7 min",
+    summary: "Ny lalàna momba ny tany: fividianana, fisoratana anarana, ary ny fomba iadiana amin'ny olana momba ny tany.",
+    sections: [
+      {
+        title: "Fomba fahazoana tany",
+        content: "Misy fomba maro ahazoana tany eto Madagasikara: ny fividianana, ny lova, ny fanomezana, na ny fanaovana 'titre' ny tany efa nampiasaina hatry ny ela.",
+      },
+      {
+        title: "Ireo antontan-taratasy ilaina",
+        content: "",
+        list: [
+          "Certificat juridique avy amin'ny Domaine",
+          "Acte de vente vita sonia sy voamarina",
+          "Kopia ny titre foncier na certificat foncier",
+          "Karapanondron'ny mpividy sy ny mpivarotra",
+        ],
+      },
+      {
+        title: "Zava-dehibe",
+        content: "Hamarino foana any amin'ny biraon'ny Domaine raha tena an'ilay mpivarotra tokoa ny tany alohan'ny handoavana vola. Tandremo ny 'double vente'.",
+        type: "warning",
+      },
+    ],
+    related: ["fandovana", "andraikitra"],
+  },
+  "roaka-asa": {
+    title: "Raha roaky ny asa aho, inona no zon'ko?",
+    category: "asa-mpiasa",
+    level: "antsalotra",
+    readTime: "6 min",
+    summary: "Ny zon'ny mpiasa raha voaroaka: indemnité, préavis, ary ny fomba miaro tena manoloana ny fandroahana tsy ara-drariny.",
+    sections: [
+      {
+        title: "Karazana fandroahana",
+        content: "Misy ny fandroahana noho ny fahadisoana (faute), ny fandroahana noho ny antony ara-toekarena, ary ny fandroahana tsy ara-drariny (licenciement abusif).",
+      },
+      {
+        title: "Ireo onitra azonao tadiavina",
+        content: "",
+        list: [
+          "Indemnité de licenciement (raha niasa mihoatra ny 2 taona)",
+          "Indemnité de préavis (raha tsy nampitandremana mialoha)",
+          "Indemnité de congés payés (ny andro tsy nialana sasatra)",
+          "Certificat de travail",
+        ],
+      },
+      {
+        title: "Inona no atao?",
+        content: "Manatona ny Inspection du Travail raha heverinao fa tsy ara-dalàna ny fandroahana anao. Izy ireo no mpanelanelana voalohany.",
+      },
+    ],
+    related: ["kontrata-asa", "olana-asa"],
+  },
+  "heloka-be-aty": {
+    title: "Inona ny tsy fitoviana amin'ny heloka?",
+    category: "heloka-fitoriana",
+    level: "antsalotra",
+    readTime: "7 min",
+    summary: "Contravention, délit, crime: ny sokajy heloka tsirairay ary ny sazy mifandraika aminy araka ny Code Pénal.",
+    sections: [
+      {
+        title: "Ny Contravention",
+        content: "Heloka maivana toy ny fandikana ny lalàn'ny fifamoivoizana na tabataba amin'ny alina. Sazy amande na figadrana fohy no miandry amin'izany.",
+      },
+      {
+        title: "Ny Délit",
+        content: "Heloka antonony toy ny halatra tsotra, herisetra maivana, na fisolokiana. Ny Fitsarana Ambaratonga Voalohany no mitsara azy.",
+      },
+      {
+        title: "Ny Crime",
+        content: "Heloka bevava toy ny vono olona, fanolanana, na halatra mitam-piadiana. Ny Fitsarana Ady Heloka Be (Cour Criminelle) no mandray izany.",
+      },
+    ],
+    related: ["fitoriana-polisy", "fitoriana"],
+  },
+  "trosa": {
+    title: "Misy namana manana trosa amiko",
+    category: "vola-varotra",
+    level: "pemiera",
+    readTime: "5 min",
+    summary: "Ny lalàna momba ny trosa: fomba famerenana, ny dikan'ny reconnaissance de dette, ary ny dingana ara-pitsarana.",
+    sections: [
+      {
+        title: "Ny maha-zava-dehibe ny taratasy",
+        content: "Ny trosa mihoatra ny vola voatondron'ny lalàna dia tokony hanana 'Reconnaissance de dette' an-tsoratra sy misy sonia ho porofo.",
+      },
+      {
+        title: "Dingana famerenam-bola",
+        content: "",
+        numberedSteps: [
+          "Fandefasana 'Mise en demeure' (taratasy fampitandremana)",
+          "Fifampiresahana am-pilaminana (médiation)",
+          "Fitoriana amin'ny fitsarana sivily (Injonction de payer)",
+        ],
+      },
+      {
+        title: "Torohevitra",
+        content: "Aza adino ny manisy daty sy ny fe-potoana famerenana ny vola ao anatin'ny taratasy ifanekena.",
+        type: "example",
+      },
+    ],
+    related: ["varotra-antsinjarany"],
+  },
+  "varotra-antsinjarany": {
+    title: "Ahoana ny fomba manomboka varotra ara-dalàna?",
+    category: "vola-varotra",
+    level: "antsalotra",
+    readTime: "8 min",
+    summary: "RCS, STAT, NIF: ny dingana rehetra hanombohana varotra ara-dalàna eto Madagasikara.",
+    sections: [
+      {
+        title: "Ny karazana orinasa",
+        content: "Afaka mifidy ny ho 'Entreprise Individuelle' ianao (amin'ny anaranao manokana) na 'Société' (tahaka ny SARL, izay manana ny maha-izy azy manokana).",
+      },
+      {
+        title: "Dingana arahina",
+        content: "",
+        list: [
+          "Fisoratana anarana amin'ny Registre du Commerce (RCS)",
+          "Fakana ny karatra Statistique (STAT)",
+          "Fakana ny Numero d'Identification Fiscale (NIF)",
+          "Fahazoana 'Carte Professionnelle' raha ilaina",
+        ],
+      },
+      {
+        title: "Tombony",
+        content: "Ny varotra ara-dalàna dia ahafahanao mahazo fampindramam-bola any amin'ny banky sy miaro anao amin'ny fanasaziana mandritra ny fanaraha-maso.",
+      },
+    ],
+    related: ["trosa", "kontrata-asa"],
+  },
+  "fandovana": {
+    title: "Ahoana ny fomba mandova ara-dalàna?",
+    category: "fianakaviana",
+    level: "antsalotra",
+    readTime: "9 min",
+    summary: "Ny lalàna momba ny fandovana: ny mpandova, ny testamenta, ary ny fizarana fananana.",
+    sections: [
+      {
+        title: "Iza no mandova?",
+        content: "Ny lalàna dia mametraka filaharam-be (ordre successoral): ny ankizy no voalohany, arahin'ny vady, avy eo ny ray aman-dreny sy ny mpiray tam-po raha tsy misy ankizy.",
+      },
+      {
+        title: "Ny dikan'ny 'Acte de Notoriété'",
+        content: "Taratasy avoakan'ny fitsarana na ny notera io mba hanamarinana ny maha-mpandova ny olona iray aorian'ny fahafatesan'ny tompon'ny fananana.",
+      },
+      {
+        title: "Ny Testamenta",
+        content: "Afaka manao testamenta ny olona iray mba handahatra ny fananany, saingy misy ampahany amin'ny fananana tsy maintsy omena ny mpandova mivantana (réserve héréditaire).",
+      },
+      {
+        title: "Zava-dehibe",
+        content: "Mila efaina ny 'droits de mutation' na ny hetra amin'ny fandovana rehefa mamindra ny anaran'ny fananana amin'ny mpandova.",
+        type: "warning",
+      },
+    ],
+    related: ["fampakaram-bady", "fisaraham-panambadiana", "fanekena-tany"],
   },
 }
 

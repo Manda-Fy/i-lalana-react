@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 import { categories } from "../../data/legalData"
 
-function SearchBar({ onSearch, onCategoryFilter, onSort }) {
+function SearchBar({ onSearch, onCategoryFilter, onSort, lang = 'mg' }) {
   const [query, setQuery] = useState("")
   const [selectedCategory, setSelectedCategory] = useState("all")
   const [sortBy, setSortBy] = useState("popular")
@@ -33,7 +33,7 @@ function SearchBar({ onSearch, onCategoryFilter, onSort }) {
           </svg>
           <input
             type="text"
-            placeholder="Ireo izay tadiavinao..."
+            placeholder={lang === 'fr' ? "Rechercher..." : "Ireo izay tadiavinao..."}
             value={query}
             onChange={handleSearch}
             className="w-full pl-12 pr-4 py-3 rounded-xl border border-slate-200 bg-white shadow-sm focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-transparent text-slate-700 placeholder-slate-400"
@@ -44,9 +44,9 @@ function SearchBar({ onSearch, onCategoryFilter, onSort }) {
           onChange={handleCategoryChange}
           className="px-4 py-3 rounded-xl border border-slate-200 bg-white shadow-sm focus:outline-none focus:ring-2 focus:ring-amber-500 text-slate-700"
         >
-          <option value="all">Sokajy rehetra</option>
+          <option value="all">{lang === 'fr' ? "Toutes catégories" : "Sokajy rehetra"}</option>
           {categories.map((cat) => (
-            <option key={cat.id} value={cat.id}>{cat.icon} {cat.name}</option>
+            <option key={cat.id} value={cat.id}>{cat.icon} {lang === 'fr' ? cat.nameFr || cat.name : cat.name}</option>
           ))}
         </select>
         <select
@@ -54,9 +54,9 @@ function SearchBar({ onSearch, onCategoryFilter, onSort }) {
           onChange={handleSortChange}
           className="px-4 py-3 rounded-xl border border-slate-200 bg-white shadow-sm focus:outline-none focus:ring-2 focus:ring-amber-500 text-slate-700"
         >
-          <option value="popular">Malaza indrindra</option>
-          <option value="recent">Vao haingana</option>
-          <option value="readTime">Fohy indrindra</option>
+          <option value="popular">{lang === 'fr' ? "Plus populaires" : "Malaza indrindra"}</option>
+          <option value="recent">{lang === 'fr' ? "Plus récents" : "Vao haingana"}</option>
+          <option value="readTime">{lang === 'fr' ? "Temps court" : "Fohy indrindra"}</option>
         </select>
       </div>
     </section>

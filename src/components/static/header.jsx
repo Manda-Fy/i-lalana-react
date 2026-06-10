@@ -8,7 +8,7 @@ function Header(){
     <div id="header-conteneur" className="navbar bg-amber-800 backdrop-blur-lg shadow-xs border-b border-slate-200 fixed top-0 left-0 right-0 z-40 transition-all duration-300 font-lato">
       <div className="w-full max-w-6xl mx-auto flex items-center justify-between px-4 py-4 md:px-6">
         <div id="header-logo-conteneur" className="flex items-center gap-2">
-          <Link to="/" id="header-logo" className="text-2xl font-extrabold tracking-tight text-slate-900 text-white hover:scale-105 transition-transform duration-300 cursor-pointer">I-Lalana</Link>
+          <Link to="/" id="header-logo" className="text-2xl font-extrabold tracking-tight text-slate-900 text-white hover:scale-105 transition-transform duration-300 cursor-pointer">I-Lalàna</Link>
         </div>
 
         <div className="flex items-center gap-2">
